@@ -18,13 +18,13 @@
  The following **required** functionality is complete:
  ← `script.js`: If you're feeling fancy you can add interactivity to your site with JavaScript.
 
- * [- ] Game interface has a heading (h1 tag), a line of body text (p tag), and four buttons that match the demo app
- * [ -] "Start" button toggles between "Start" and "Stop" when clicked. 
- * [ -] Game buttons each light up and play a sound when clicked. 
- * [- ] Computer plays back sequence of clues including sound and visual cue for each button
- * [ -] Play progresses to the next turn (the user gets the next step in the pattern) after a correct guess. 
- * [ -] User wins the game after guessing a complete pattern
- * [ -] User loses the game after an incorrect guess
+ * [x ] Game interface has a heading (h1 tag), a line of body text (p tag), and four buttons that match the demo app
+ * [ x] "Start" button toggles between "Start" and "Stop" when clicked. 
+ * [x] Game buttons each light up and play a sound when clicked. 
+ * [x] Computer plays back sequence of clues including sound and visual cue for each button
+ * [x] Play progresses to the next turn (the user gets the next step in the pattern) after a correct guess. 
+ * [x] User wins the game after guessing a complete pattern
+ * [x] User loses the game after an incorrect guess
  ![Glitch](https://cdn.glitch.com/a9975ea6-8949-4bab-addb-8a95021dc2da%2FLogo_Color.svg?v=1602781328576)
 
  The following **optional** features are implemented:
