@@ -6,7 +6,7 @@
  Submitted by: **Ahmed Elsharkay**
  ## What's in this project?
 
- Time spent: **4** hours spent in total
+ Time spent: **7** hours spent in total
  ← `README.md`: That's this file, where you can tell people what your cool website does and how you built it.
 
  Link to project: (https://glitch.com/edit/#!/versed-coffee-seer?path=style.css%3A1%3A0, should start with https://glitch.com...)
