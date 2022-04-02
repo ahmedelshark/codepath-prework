@@ -2,14 +2,24 @@
 const clueHoldTime = 1000; //how long to hold each clue's light/sound
 const cluePauseTime = 333; //how long to pause in between clues
 const nextClueWaitTime = 1000; //how long to wait before starting playback of the clue sequence
+const len = 6;
 //Global Variables
-var pattern = [2, 2, 4, 3, 2, 1, 2, 4];
+var pattern = [6, 5, 4, 3, 2, 1, 2, 4];
 var progress = 0; 
 var gamePlaying = false;
 var tonePlaying = false;
 var volume = 0.5;  //must be between 0.0 and 1.0
 var guessCounter = 0;
+var numOfMistakes =0 ; 
+var count = 20 ; 
+var reset = false; 
+let timer = null; 
 
+function Pattern() {
+  for (let j = 0; j < len; j++) {
+    pattern[j] = Math.ceil(Math.random() * 6);
+  }
+}
 function startGame(){
     //initialize game variables
     progress = 0;
@@ -17,7 +27,8 @@ function startGame(){
     // swap the Start and Stop buttons
     document.getElementById("startbtn").classList.add("hidden");
     document.getElementById("stopbtn").classList.remove("hidden");
-    playClueSequence();
+     Pattern()
+  playClueSequence();
 }
 
 function stopGame(){
@@ -26,6 +37,7 @@ function stopGame(){
   // swap the Start and Stop buttons
 document.getElementById("startbtn").classList.remove("hidden");
 document.getElementById("stopbtn").classList.add("hidden");
+  reset = true; 
 }
 
 function lightButton(btn){
@@ -45,6 +57,7 @@ function playSingleClue(btn){
 function playClueSequence(){
   context.resume()
   guessCounter = 0;
+  numOfMistakes = 0 ; 
   let delay = nextClueWaitTime; //set delay to initial wait time
   for(let i=0;i<=progress;i++){ // for each clue that is revealed so far
     console.log("play single clue: " + pattern[i] + " in " + delay + "ms")
@@ -52,7 +65,9 @@ function playClueSequence(){
     delay += clueHoldTime ;
     delay += cluePauseTime;
   }
+  
 }
+
 /*function guess(btn){
   console.log("user guessed: " + btn);
   if(!gamePlaying){
@@ -97,15 +112,22 @@ function guess(btn){
   }else{
     //Guess was incorrect
     //GAME OVER: LOSE!
-    loseGame();
+    numOfMistakes++
+    if (numOfMistakes===3){
+       loseGame();
+    } 
+    else {
+         alert("Wrong! Attempts left:" + (3 - numOfMistakes));}
   }
 }    
 // Sound Synthesis Functions
 const freqMap = {
-  1: 261.6,
-  2: 329.6,
-  3: 392,
-  4: 466.2
+  1: 250,
+  2: 325,
+  3: 390,
+  4: 450,
+  5: 520,
+  6:720
 }
 function playTone(btn,len){ 
   o.frequency.value = freqMap[btn]
@@ -131,7 +153,6 @@ function stopTone(){
 }
 
 
-
 // Page Initialization
 // Init Sound Synthesizer
 var AudioContext = window.AudioContext || window.webkitAudioContext 
@@ -142,4 +163,3 @@ g.connect(context.destination)
 g.gain.setValueAtTime(0,context.currentTime)
 o.connect(g)
 o.start(0)
-

@@ -33,16 +33,28 @@ border-radius: 10px;}
   display: none;
 }
 #button1 {
-    background: lightgreen;
+    background-image: url("https://cdn.glitch.global/bffa2f48-de35-493d-9da9-ded4fef415bf/3248B24B00000578-0-image-a-6_1458502063946.jpg?v=1648664582267");
+    background-position:center;
 }
 #button2 {
-    background: lightblue;
+    background-image: url("https://cdn.glitch.global/bffa2f48-de35-493d-9da9-ded4fef415bf/f7067fd115348795aef10ebdad6eee2c.jpg?v=1648664586251");
+    background-position:center;
 }
 #button3 {
-    background: pink;
+    background-image: url("https://cdn.glitch.global/bffa2f48-de35-493d-9da9-ded4fef415bf/summer-tree-care-1080x675.jpg?v=1648664601114");
+    background-position:center;
 }
 #button4 {
-    background: lightyellow;
+    background-image: url("https://cdn.glitch.global/bffa2f48-de35-493d-9da9-ded4fef415bf/Grand-Teton-winter-wonderlands-GettyImages-723509399.jpg.webp?v=1648664596930");
+background-position:center;
+}
+#button5 {
+    background-image: url("https://cdn.glitch.global/bffa2f48-de35-493d-9da9-ded4fef415bf/tumblr_static_winter_tree_by_epickittyness-d3dpj76.jpg?v=1648664607039");
+    background-position:center;
+}
+#button6 {
+    background-image: url("https://cdn.glitch.global/bffa2f48-de35-493d-9da9-ded4fef415bf/white-mountains-summer-77.jpg?v=1648664611130") ;
+    background-position:center;
 }
 #button1:active , #button1.lit{
     background:green;
@@ -50,11 +62,17 @@ border-radius: 10px;}
 #button2:active , #button2.lit{
     background:blue;
 }
-#button1:active , #button3.lit{
+#button3:active , #button3.lit{
     background:red;
 }
-#button1:active , #button4.lit{
+#button4:active , #button4.lit{
     background:yellow;
+}
+#button5:active , #button5.lit{
+    background:lightgray;
+}
+#button6:active , #button6.lit{
+    background:white;
 }
 
 /* images and videos max out at full width */
