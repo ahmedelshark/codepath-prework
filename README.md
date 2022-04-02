@@ -30,13 +30,13 @@
  The following **optional** features are implemented:
  ## You built this with Glitch!
 
- * [ ] Any HTML page elements (including game buttons) has been styled differently than in the tutorial
- * [ ] Buttons use a pitch (frequency) other than the ones in the tutorial
- * [ ] More than 4 functional game buttons
+ * [x] Any HTML page elements (including game buttons) has been styled differently than in the tutorial
+ * [x] Buttons use a pitch (frequency) other than the ones in the tutorial
+ * [x] More than 4 functional game buttons
  * [ ] Playback speeds up on each turn
- * [ ] Computer picks a different pattern each time the game is played
- * [ ] Player only loses after 3 mistakes (instead of on the first mistake)
- * [ ] Game button appearance change goes beyond color (e.g. add an image)
+ * [x] Computer picks a different pattern each time the game is played
+ * [x] Player only loses after 3 mistakes (instead of on the first mistake)
+ * [x] Game button appearance change goes beyond color (e.g. add an image)
  * [ ] Game button sound is more complex than a single tone (e.g. an audio file, a chord, a sequence of multiple tones)
  * [ ] User has a limited amount of time to enter their guess on each turn
  [Glitch](https://glitch.com) is a friendly community where millions of people come together to build web apps and websites.
@@ -68,7 +68,7 @@
  [how long will it take me to be a professional web developer?]
 
  4. If you had a few more hours to work on this project, what would you spend them doing (for example: refactoring certain functions, adding additional features, etc). Be specific. (recommended 100 - 300 words) 
- [I wolud try to make the computer picks a diffrant pattern each time, I don't know how to do this in javaScrpit, but I think that I can use a funciotn like rand() in PHP to pick an random number each time, thin i will put this rand() function in a for loop and then an if statment after the function to check if the random number is less than or equle to 4 so my code will look like  for (int i =0 ; i < 8 ; i ++){ int rn, n ; n = rand(); if (n<= 4 )rn = n else {rand()} ........ I can do this only if there was a function that picks random number in javascript ]
+ [I wolud try to make a button that can mute this game because the frequencies of the buttons are so loud so maybe someone would like to play this game but without any sound or at least make it optional for the person who is going to play this game. ]
 
 
 
