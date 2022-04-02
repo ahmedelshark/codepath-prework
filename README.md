@@ -48,7 +48,8 @@
  ## Video Walkthrough (GIF)
 
  If you recorded multiple GIFs for all the implemented features, you can add them here:
- ![](http://g.recordit.co/AR4hjuHrva.gif)
+ ![](![ezgif com-gif-maker](https://user-images.githubusercontent.com/85811369/161363737-dfe5410a-1371-4261-bea1-3b0f4a128817.gif)
+)
  ![](gif2-link-here)
  ![](gif3-link-here)
  ![](gif4-link-here)
